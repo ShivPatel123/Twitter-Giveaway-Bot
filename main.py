@@ -17,7 +17,7 @@ client = tweepy.Client(bearer_token=BEARER_TOKEN, consumer_key=CONSUMER_KEY,
 # --- Functions and Vars---
 
 RUN = True
-COUNT = 1
+COUNT = 0
 SUCCESSFUL_TWEETS = 1
 BATCH_TOTAL = 0
 
