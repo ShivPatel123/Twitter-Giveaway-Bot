@@ -1,5 +1,5 @@
 # Twitter Giveaway Bot #
-A short and simple python based Twitter bot using the [Tweepy](https://github.com/tweepy/tweepy) library created by myself and [ShivPatel123](https://github.com/ShivPatel123). This bot will automatically enter giveaways by liking, commenting, retweeting, and following the author of the post. 
+A short and simple python based Twitter bot created by myself and [ShivPatel123](https://github.com/ShivPatel123) using the [Tweepy](https://github.com/tweepy/tweepy) library. This bot will automatically enter giveaways by liking, commenting, retweeting, and following the author of the post. 
 
 ## Features ##
 * Automates entering giveaways
