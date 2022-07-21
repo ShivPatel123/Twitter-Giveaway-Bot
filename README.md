@@ -14,7 +14,7 @@ To get started, you will need to create a Twitter developer account at https://d
 
 After cloning the repository, add the keys generated from your application into **config.py** in the given strings. 
 
-Head into **main.py** and add the accounts you want to be tagged in the comments in the tag_list in line 30 and the topics you want to find giveaways for in the query_list in line 35. Insert one account that the bot will tag in the comments in line 103. Run main.
+Head into **main.py** and add the accounts you want to be tagged in the comments in the tag_list in line 30 and the topics you want to find giveaways for in the query_list in line 35. Insert one account that the bot will tag in the comments in line 103. Run **main.py**.
 
 If you choose to use the purge feature, input the account's Twitter ID on line 17 as an integer type and run **purge.py**. However, using this feature can get the account temporarily banned due to Twitter's API limitations.
 
