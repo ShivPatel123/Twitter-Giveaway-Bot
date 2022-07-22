@@ -139,7 +139,7 @@ while RUN:
                     + str(datetime.now()))
     print('\n')
     COUNT += 1
-    if COUNT > len(COUNT) - 1:
+    if COUNT > len(query_list) - 1:
         COUNT = 0
 
     print(str(SUCCESSFUL_TWEETS - 1) + ' tweets succeeded.')
