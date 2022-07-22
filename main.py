@@ -20,6 +20,7 @@ RUN = True
 COUNT = 0
 SUCCESSFUL_TWEETS = 1
 BATCH_TOTAL = 0
+TIME_SLEEP = 7200
 
 regex_tagnum = re.compile(r'tag\s\d{1}')
 regex_tagchar = re.compile(r'tag\ [a-zA-Z]\b')
@@ -32,7 +33,7 @@ tag_list = ['@', '@ @',
             '@ @ @ @']
 
 # INPUT QUERY KEYWORDS HERE
-query_list = ['valorant', 'nft', 'csgo', 'steam', 'gaming', 'skin']
+query_list = ['valorant', 'pokemon', 'nft', 'csgo', 'steam', 'gaming', 'skin']
 
 
 def regex_search(regex, search_str):
@@ -53,10 +54,7 @@ def return_twitterid(input_screen_name):
     """
     # Returns the Twitter ID of a user given their screen name.
     """
-    # print("The screen name is: " + input_screen_name)
     twitterid = client.get_user(username=input_screen_name)
-    # print(type(twitterid))  # to confirm the type of object
-    # print(f"The Twitter ID is {twitterid.data.id}.")
     return twitterid.data.id
 
 
@@ -141,7 +139,7 @@ while RUN:
                     + str(datetime.now()))
     print('\n')
     COUNT += 1
-    if COUNT > 5:
+    if COUNT > len(COUNT) - 1:
         COUNT = 0
 
     print(str(SUCCESSFUL_TWEETS - 1) + ' tweets succeeded.')
@@ -150,6 +148,6 @@ while RUN:
     BATCH_TOTAL += 1
 
     print('The batch total is: ' + str(BATCH_TOTAL) +
-          "\nSleeping for 4 hours..." + '\nMoving to ' + query_list[COUNT] + ' entry.')
+          "\nSleeping for " + str(int((TIME_SLEEP / 3600))) + " hours..." + '\nMoving to ' + query_list[COUNT] + ' entry.')
 
-    time.sleep(14400)
+    time.sleep(TIME_SLEEP)
