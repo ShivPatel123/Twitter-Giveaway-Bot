@@ -7,7 +7,7 @@ A short and simple python based Twitter bot created by myself and [ShivPatel123]
   * Retweets 
   * Likes the post
   * Comments a short message and tags the number of people required to enter the giveaway
-* Opensource
+* Open source
   
 ## Setup ##
 To get started, you will need to create a Twitter developer account at https://developer.twitter.com/ and create a application with OAuth 2.0 with both read and write permissions enabled. 
